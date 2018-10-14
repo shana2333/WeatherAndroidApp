@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/position_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/getTimezone"
+        app:layout_constraintTop_toBottomOf="@+id/position_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Timezone"/>
+
+    <Button
+        android:id="@+id/getWeatherSummary"
+        app:layout_constraintTop_toBottomOf="@+id/getTimezone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Weather Summary"/>
+
+    <Button
+        android:id="@+id/getTemperature"
+        app:layout_constraintTop_toBottomOf="@+id/getWeatherSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Temperature"/>
+
+    <Button
+        android:id="@+id/getWindSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/getTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get WindSpeed"/>
+
+    <Button
+        android:id="@+id/todo"
+        app:layout_constraintTop_toBottomOf="@+id/getWindSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Future work for this app"/>
+
+    <Button
+        android:id="@+id/getme"
+        app:layout_constraintTop_toBottomOf="@+id/todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Who designed this app ?"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="Result"
+        app:layout_constraintTop_toBottomOf="@+id/getme"
+        android:textColor="#000000"/>
+
+</android.support.constraint.ConstraintLayout>
